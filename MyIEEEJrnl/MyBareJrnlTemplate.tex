@@ -1,0 +1,158 @@
+\documentclass[journal]{IEEEtran}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% PACKAGES
+% ---------------------------------------------------------------------------------------------------------------------------------
+% *** CITATION PACKAGES ***
+\usepackage{cite}
+
+% *** GRAPHICS RELATED PACKAGES ***
+\usepackage[dvips]{graphicx}
+% \graphicspath{{../pdf/}{../jpeg/}}
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+% \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
+
+% *** MATH PACKAGES ***
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+
+% *** SPECIALIZED LIST PACKAGES ***
+\usepackage{color}
+%\usepackage{enumerate}
+%\usepackage{algorithmic}
+
+% *** ALIGNMENT PACKAGES ***
+%\usepackage{array}
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+%\usepackage{eqparbox}
+
+% *** FIGURE PACKAGES ***
+\usepackage{psfrag}
+\usepackage[tight,footnotesize]{subfigure}
+%\usepackage{epsfig}
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+
+% *** FLOAT PACKAGES ***
+%\usepackage{fixltx2e}
+%\usepackage{stfloats}
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+
+% *** MISCELLANEOUS ***
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% MACROS
+% ---------------------------------------------------------------------------------------------------------------------------------
+\providecommand{\T}[0]{\textsf{T}} % Transpose
+\providecommand{\abs}[1]{\lvert#1\rvert} % Absolute value
+\providecommand{\norm}[1]{\lVert#1\rVert} % Norm
+\providecommand{\N}{\mathbb{N}} % Natural Numbers
+\providecommand{\Z}{\mathbb{Z}} % Inegers Numbers
+\providecommand{\R}{\mathbb{R}} % Real Numbers
+\newcommand{\note}{\textcolor{red}} % Notes
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+% ---------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\bibliographystyle{ieeetr}
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% TITLE AND AUTHORS
+% ---------------------------------------------------------------------------------------------------------------------------------
+\title{\note{My Bare Bones of IEEEtran Latex Template for Journals}}
+
+\author{Rowland~O'Flaherty, \note{John~Doe,~\IEEEmembership{Fellow,~OSA,} and~Jane~Doe,~\IEEEmembership{Member,~IEEE}}% <-this % stops a space
+\thanks{R. O'Flaherty is with the \note{???} Group, Georgia Institute of Technology, Atlanta, Georgia 30332, e-mail: rowland.oflaherty@gatech.edu.}% <-this % stops a space
+\thanks{\note{J. Doe and J. Doe are with Anonymous University.}}% <-this % stops a space
+\thanks{Manuscript received \note{MONTH DD, YYYY}; revised \note{MONTH DD, YYYY.}}}
+
+% The paper headers
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~Number, No.~Number, Month~YYYY}%
+{Shell \MakeLowercase{\textit{et al.}}: \note{My Bare Bones of Latex Template for Journals}}
+
+% Use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+% Make the title area
+\maketitle
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% ABSTRACT
+% ---------------------------------------------------------------------------------------------------------------------------------
+\begin{abstract}
+\note{The abstract goes here}
+\end{abstract}
+
+% Use when submitting for peer review
+%\IEEEpeerreviewmaketitle
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% KEYWORDS
+% ---------------------------------------------------------------------------------------------------------------------------------
+\begin{IEEEkeywords}
+\note{Keyword1}, \note{Keyword2}, \note{Keyword3}.
+\end{IEEEkeywords}
+
+% Use when submitting for peer review
+%\IEEEpeerreviewmaketitle
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% INTRODUCTION
+% ---------------------------------------------------------------------------------------------------------------------------------
+\section{Introduction}
+\IEEEPARstart{T}{his} \note{template file is intended to serve as a ``starter file''
+for IEEE journal papers produced under \LaTeX\ using IEEEtran.cls version 1.7 and later.}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% Subsection
+% ---------------------------------------------------------------------------------------------------------------------------------
+\subsection{\note{Subsection Heading Here}}
+note{Subsection text here}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% Subsubsection
+% ---------------------------------------------------------------------------------------------------------------------------------
+\subsubsection{\note{Subsubsection Heading Here}}
+note{Subsubsection text here}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% CONCLUSION
+% ---------------------------------------------------------------------------------------------------------------------------------
+\section{Conclusion}
+note{The conclusion goes here}
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% APPENDICES
+% ---------------------------------------------------------------------------------------------------------------------------------
+\appendices
+\section{\note{Section Heading}}
+\note{Appendix one text goes here}
+
+\section{}
+\note{Appendix two text goes here}
+
+% Use this section for acknowledgement
+\section*{Acknowledgment}
+\note{The authors would like to thank...}
+
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% REFERENCES
+% ---------------------------------------------------------------------------------------------------------------------------------
+ \bibliography{BibCollectionName}
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% END DOCUMENT
+% ---------------------------------------------------------------------------------------------------------------------------------
+\end{document}
+
+

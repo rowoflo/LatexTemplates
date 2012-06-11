@@ -1,0 +1,85 @@
+%%!TEX TS-program = latex
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath}
+\usepackage{graphics,graphicx,amssymb,verbatim,color}
+\usepackage{epstopdf,amsxtra,epsfig,subfigure, psfrag}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
+
+%%% Set the margins %%%
+\setlength{\topmargin}{-.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{.5in}
+\setlength{\textheight}{8.75in}
+\setlength{\textwidth}{7in}
+\setlength{\oddsidemargin}{-.125in}
+\setlength{\evensidemargin}{0in}
+
+%%% Set paragraph style %%%
+\setlength{\parindent}{0pt} 
+\setlength{\parskip}{2ex}
+
+%%% Helper Macros %%%
+\newcommand{\note}{\textcolor{blue}}
+\providecommand{\T}[0]{\textsf{T}}
+\providecommand{\ul}[1]{\underline{#1}}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\eqnbox}[1]
+{
+\begin{equation*}
+\addtolength{\fboxsep}{1pt}
+\boxed{
+\begin{split}
+#1
+\end {split}
+}
+\end{equation*}
+}
+
+%%% Homework Document Macros %%%
+% Homework specifics
+\newcommand{\hwName}{Homework 0}
+\newcommand{\dueDate}{MM/DD/YYYY}
+\newcommand{\myFirstName}{Rowland}
+\newcommand{\myLastName}{O'Flaherty}
+\newcommand{\courseNum}{Class Number}
+\newcommand{\courseName}{Class Name}
+\newcommand{\courseTerm}{Term YYYY}
+
+% Full Name
+\newcommand{\myFullName}{\myFirstName~\myLastName}
+
+% Document Header - 1st page only
+\newcommand{\docHeader}
+{
+\noindent{\courseName ~ \courseNum ~ \courseTerm} \hfill {\myFullName}
+
+\noindent{\hwName} \hfill {\dueDate}
+\noindent\rule[8pt]{\textwidth}{1pt}
+}
+
+% Running Header - every page
+\newcommand{\runningHeader}{\markright{\it{\courseNum ~ \hwName \hfill \myLastName~~~}}}
+
+% New problem
+\newcommand{\problem}[2]{\section*{Problem {#1}~-~{#2}}}
+\newcommand{\problemPart}[1]{\subsection*{(#1)}}
+
+% ---------------------------------------------------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+% ---------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\runningHeader
+\pagestyle{myheadings}
+\thispagestyle{empty}
+\docHeader
+\problem{1}{Hello \note{TODO}}
+The solution to the first problem.
+\problemPart{1.1}{\note{TODO}}
+\problemPart{2.1}{\note{TODO}}
+
+\newpage
+
+\problem{2}{Good Bye \note{TODO}}
+
+\end{document}

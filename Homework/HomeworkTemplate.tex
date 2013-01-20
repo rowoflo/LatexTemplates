@@ -19,11 +19,13 @@
 \setlength{\parskip}{2ex}
 
 %%% Helper Macros %%%
-\newcommand{\note}{\textcolor{blue}}
+\newcommand{\note}{\textcolor{red}}
+\providecommand{\todo}[0]{\textcolor{blue}{TO DO}}
 \providecommand{\T}[0]{\textsf{T}}
 \providecommand{\ul}[1]{\underline{#1}}
 \providecommand{\abs}[1]{\lvert#1\rvert}
-\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+
 \newcommand{\eqnbox}[1]
 {
 \begin{equation*}
@@ -42,12 +44,13 @@
 \newcommand{\dueDate}{MM/DD/YYYY}
 \newcommand{\myFirstName}{Rowland}
 \newcommand{\myLastName}{O'Flaherty}
+\newcommand{\myIDNumber}{902842823}
 \newcommand{\courseNum}{Class Number}
 \newcommand{\courseName}{Class Name}
 \newcommand{\courseTerm}{Term YYYY}
 
 % Full Name
-\newcommand{\myFullName}{\myFirstName~\myLastName}
+\newcommand{\myFullName}{\myFirstName~\myLastName~(\myIDNumber)}
 
 % Document Header - 1st page only
 \newcommand{\docHeader}
@@ -65,21 +68,21 @@
 \newcommand{\problem}[2]{\section*{Problem {#1}~-~{#2}}}
 \newcommand{\problemPart}[1]{\subsection*{(#1)}}
 
-% ---------------------------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
 % BEGIN DOCUMENT
-% ---------------------------------------------------------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------------------------------------
 \begin{document}
 \runningHeader
 \pagestyle{myheadings}
 \thispagestyle{empty}
 \docHeader
-\problem{1}{Hello \note{TODO}}
+\problem{1}{Hello \todo}
 The solution to the first problem.
-\problemPart{1.1}{\note{TODO}}
-\problemPart{2.1}{\note{TODO}}
+\problemPart{1.1}{\todo}
+\problemPart{2.1}{\todo}
 
 \newpage
 
-\problem{2}{Good Bye \note{TODO}}
+\problem{2}{Good Bye \todo}
 
 \end{document}

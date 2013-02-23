@@ -1,8 +1,8 @@
-%%!TEX TS-program = latex
 \documentclass[12pt]{article}
 \usepackage{amssymb,amsmath}
 \usepackage{graphics,graphicx,amssymb,verbatim,color}
 \usepackage{epstopdf,amsxtra,epsfig,subfigure, psfrag}
+\usepackage{titlesec}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `basename #1 .tif`.png}
 
 %%% Set the margins %%%
@@ -73,6 +73,7 @@
 \newcommand{\runningHeader}{\markright{\it{\courseNum ~ \hwName \hfill \myLastName~~~}}}
 
 % New problem
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
 \newcommand{\problem}[2]{\section*{Problem {#1}~-~{#2}}}
 \newcommand{\problemPart}[1]{\subsection*{(#1)}}
 

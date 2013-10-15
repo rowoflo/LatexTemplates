@@ -42,7 +42,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[idxtotoc,hyperref,openany]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
+\documentclass[idxtotoc,hyperref,openany,oneside]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
 
 \usepackage[ 
   backref=page,
@@ -56,28 +56,17 @@
 \usepackage{float} % Required for specifying the exact location of a figure or table
 \usepackage{graphicx} % Required for including images
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Command to make the lines in the title page
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
+\setlength{\parskip}{10pt plus 1pt minus 1pt} % Set space between paragraphs
 
-% -------------------------------------------------------------------------------------
-%	MACROS
-% -------------------------------------------------------------------------------------
-
-\providecommand{\T}[0]{\textsf{T}} % Transpose
-\providecommand{\abs}[1]{\lvert#1\rvert} % Absolute value
-\providecommand{\norm}[1]{\lVert#1\rVert} % Norm
-\renewcommand{\vector}[2]{[#1_1,\ldots,#1_{#2}]} % Vector
-\newcommand{\argmin}{\operatornamewithlimits{argmin}} % Minimum argument
-\newcommand{\argmax}{\operatornamewithlimits{argmax}} % Maximum argument
-\providecommand{\N}{\mathbb{N}} % Natural Numbers
-\providecommand{\Z}{\mathbb{Z}} % Integers Numbers
-\providecommand{\R}{\mathbb{R}} % Real Numbers
-\renewcommand{\Im}{\mathcal{R}} % Range Space
-\providecommand{\Ker}{\mathcal{N}} % Null Space
-\providecommand{\note}{\textcolor{red}} % Notes
-
-\providecommand{\U}{\mathcal{U}}
+% My packages
+\usepackage{RO_syms} % This is in $TEXMFHOME/tex/latex
 
 %---------------------------------------------------------------------------------------
 

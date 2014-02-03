@@ -1,0 +1,6 @@
+[submodule "MyIEEEConf/MyPackages"]
+	path = MyIEEEConf/MyPackages
+	url = git@bitbucket.org:rowoflo/latex-packages.git
+[submodule "MyIEEEConf/ROPackages"]
+	path = MyIEEEConf/ROPackages
+	url = git@bitbucket.org:rowoflo/latex-packages.git

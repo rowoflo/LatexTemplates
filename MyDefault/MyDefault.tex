@@ -13,53 +13,24 @@
 \setlength{\evensidemargin}{0in}
 
 %%% Set paragraph style %%%
-\setlength{\parindent}{0pt} 
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{2ex}
 
 % -------------------------------------------------------------------------------------
 % PACKAGES
 % -------------------------------------------------------------------------------------
 % *** STYLE PACKAGES ***
-\usepackage{ieeehref}
-\usepackage{ieeecref}
+\usepackage{ROPackages/ieeehref}
+\usepackage{ROPackages/ieeecref}
 
-% *** CITATION PACKAGES ***
-\usepackage{cite}
-
-% *** GRAPHICS RELATED PACKAGES ***
-\usepackage[dvips]{graphicx}
-
-% *** MATH PACKAGES ***
-\usepackage[cmex10]{amsmath}
-\usepackage{amssymb}
-
-% *** SPECIALIZED LIST PACKAGES ***
-\usepackage{color}
-%\usepackage{enumerate}
-%\usepackage{algorithm,algorithmic}
-
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%\usepackage{url}
-
-% correct bad hyphenation here
-%\hyphenation{op-tical net-works semi-conduc-tor}
+% *** RO PACKAGES ***
+\usepackage{ROPackages/RO_syms} % https://bitbucket.org/rowoflo/latex-packages
 
 % -------------------------------------------------------------------------------------
 % MACROS
 % -------------------------------------------------------------------------------------
-\providecommand{\T}[0]{\textsf{T}} % Transpose
-\providecommand{\abs}[1]{\lvert#1\rvert} % Absolute value
-\providecommand{\norm}[1]{\lVert#1\rVert} % Norm
-\renewcommand{\vector}[2]{[#1_1,\ldots,#1_{#2}]} % Vector
-\newcommand{\argmin}{\operatornamewithlimits{argmin}} % Minimum argument
-\newcommand{\argmax}{\operatornamewithlimits{argmax}} % Maximum argument
-\providecommand{\N}{\mathbb{N}} % Natural Numbers
-\providecommand{\Z}{\mathbb{Z}} % Integers Numbers
-\providecommand{\R}{\mathbb{R}} % Real Numbers
-\renewcommand{\Im}{\mathcal{R}} % Range Space
-\providecommand{\Ker}{\mathcal{N}} % Null Space
-\providecommand{\note}{\textcolor{red}} % Notes
-
+% \providecommand{\newCmd}{\latexCmd} % Note: No arguments
+% \providecommand{\newCmd}[1]{\latexCmd#1} % Note: One argument
 
 % -------------------------------------------------------------------------------------
 % TITLE AND AUTHORS
@@ -80,7 +51,7 @@
 \note{The abstract goes here}
 \end{abstract}
 
-\section{Paper}
-\note{Paper goes here}
+\section{Paper} \label{sec:paper}
+\note{Paper goes in this \cref{sec:paper}}
 
 \end{document}

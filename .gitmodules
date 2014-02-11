@@ -4,3 +4,6 @@
 [submodule "MyIEEEConf/ROPackages"]
 	path = MyIEEEConf/ROPackages
 	url = git@bitbucket.org:rowoflo/latex-packages.git
+[submodule "MyDefault/ROPackages"]
+	path = MyDefault/ROPackages
+	url = git@bitbucket.org:rowoflo/latex-packages.git

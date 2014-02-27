@@ -7,3 +7,6 @@
 [submodule "MyDefault/ROPackages"]
 	path = MyDefault/ROPackages
 	url = git@bitbucket.org:rowoflo/latex-packages.git
+[submodule "LabBook/ROPackages"]
+	path = LabBook/ROPackages
+	url = git@bitbucket.org:rowoflo/latex-packages.git

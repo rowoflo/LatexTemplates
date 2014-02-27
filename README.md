@@ -9,6 +9,8 @@ To add ROPackages submodule to a new template folder (NewFolder) run the followi
 
     >> git submodule add git@bitbucket.org:rowoflo/latex-packages.git NewFolder/ROPackages
 
+Make sure the /usepackages{ROPackages/RO_syms} is included in the latex file.
+
 To use a template copy and paste the contents into your working Latex folder. Remove the ROPackages folder and run:
 
     >> git submodule add git@bitbucket.org:rowoflo/latex-packages.git ROPackages

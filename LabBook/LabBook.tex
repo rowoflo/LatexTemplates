@@ -14,26 +14,26 @@
 % lab book.
 %
 % The \lipsum[#] commands throughout this template generate dummy text
-% to fill the template out. These commands should all be removed when 
+% to fill the template out. These commands should all be removed when
 % writing lab book content.
 %
-% HOW TO USE THIS TEMPLATE 
+% HOW TO USE THIS TEMPLATE
 % Each day in the lab consists of three main things:
 %
-% 1. LABDAY: The first thing to put is the \labday{} command with a date in 
-% curly brackets, this will make a new page and put the date in big letters 
+% 1. LABDAY: The first thing to put is the \labday{} command with a date in
+% curly brackets, this will make a new page and put the date in big letters
 % at the top.
 %
-% 2. EXPERIMENT: Next you need to specify what experiment(s) you are 
-% working on with an \experiment{} command with the experiment shorthand 
-% in the curly brackets. The experiment shorthand is defined in the 
-% 'DEFINITION OF EXPERIMENTS' section below, this means you can 
-% say \experiment{pcr} and the actual text written to the PDF will be what 
-% you set the 'pcr' experiment to be. If the experiment is a one off, you can 
-% just write it in the bracket without creating a shorthand. Note: if you don't 
+% 2. EXPERIMENT: Next you need to specify what experiment(s) you are
+% working on with an \experiment{} command with the experiment shorthand
+% in the curly brackets. The experiment shorthand is defined in the
+% 'DEFINITION OF EXPERIMENTS' section below, this means you can
+% say \experiment{pcr} and the actual text written to the PDF will be what
+% you set the 'pcr' experiment to be. If the experiment is a one off, you can
+% just write it in the bracket without creating a shorthand. Note: if you don't
 % want to have an experiment, just leave this out and it won't be printed.
 %
-% 3. CONTENT: Following the experiment is the content, i.e. what progress 
+% 3. CONTENT: Following the experiment is the content, i.e. what progress
 % you made on the experiment that day.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,30 +44,12 @@
 
 \documentclass[idxtotoc,hyperref,openany,oneside]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
 
-\usepackage[ 
-  backref=page,
-  pdfpagelabels=true,
-  plainpages=false,
-  colorlinks=true,
-  bookmarks=true,
-  pdfview=FitB]{hyperref} % Required for the hyperlinks within the PDF
-  
-\usepackage{booktabs} % Required for the top and bottom rules in the table
-\usepackage{float} % Required for specifying the exact location of a figure or table
-\usepackage{graphicx} % Required for including images
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[cmex10]{amsmath}
-\usepackage{amssymb}
-\usepackage{color}
-\usepackage{subfigure}
-
-
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Command to make the lines in the title page
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 \setlength{\parskip}{10pt plus 1pt minus 1pt} % Set space between paragraphs
 
 % My packages
-\usepackage{RO_syms} % This is in $TEXMFHOME/tex/latex
+\usepackage{ROPackages/RO_syms} % This is in $TEXMFHOME/tex/latex
 
 %---------------------------------------------------------------------------------------
 
@@ -105,17 +87,23 @@
 
 %Text
 
-% \begin{figure}[h]
-%   \center
-%   \subfigure[]{ \label{fig:label1}
-%     \includegraphics[width=.45\columnwidth]{fig1.png}
-%   }
-%   \subfigure[]{ \label{fig:label2}
-%     \includegraphics[width=.45\columnwidth]{fig2.png}
-%   }
-%   \caption{\small Capation}
-%   \label{fig:fig1}
-% \end{figure}
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{example_figure.png}
+                \caption{A gull}
+                \label{fig:gull}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{example_figure.png}
+                \caption{A tiger}
+                \label{fig:tiger}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+\end{figure}
 
 %-----------------------------------------
 

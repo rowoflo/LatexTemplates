@@ -38,9 +38,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
 \documentclass[idxtotoc,hyperref,openany,oneside]{labbook} % 'openany' here removes the gap page between days, erase it to restore this gap; 'oneside' can also be added to remove the shift that odd pages have to the right for easier reading
 
@@ -50,14 +50,13 @@
 
 % My packages
 \usepackage{ROPackages/RO_syms} % This is in $TEXMFHOME/tex/latex
-
-%---------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 %	TITLE PAGE
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
 \frontmatter % Use Roman numerals for page numbers
 \title{
@@ -75,40 +74,31 @@
 
 \mainmatter % Use Arabic numerals for page numbers
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 %	LAB BOOK CONTENTS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
 % Blank template to use for new days:
 
-%\labday{Day, Date Month Year}
+\labday{Dec 30, 2000}
 
-\experiment{Dec 30, 2000}
+\experiment{Experiment 1}
 
-%Text
+Some text for experiment 1
 
-\begin{figure}
-\includegraphics[width=\textwidth]{Figs_2000_12_30/example_figure.png}
-\caption{Caption here}
-\label{fig:1}
+\begin{figure}[H]
+  \centering
+  \includegraphics[]{Figs_2000_12_30/example_figure.png}
+  \caption{Caption here}
+  \label{fig:1}
 \end{figure}
 
-%-----------------------------------------
 
-%\experiment{}
+\experiment{Experiment 2}
 
-%Text
-
-%----------------------------------------------------------------------------------------
-
-\labday{date}
-
-\experiment{example}
+Some text for experiment 2
 
 
-
-
-
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------
 
 \end{document}

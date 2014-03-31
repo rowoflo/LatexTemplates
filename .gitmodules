@@ -1,9 +1,12 @@
-[submodule "LabBook/ROPackages"]
-	path = LabBook/ROPackages
-	url = git@github.com:rowoflo/ROPackages.git
-[submodule "MyIEEEConf/ROPackages"]
-	path = MyIEEEConf/ROPackages
-	url = git@github.com:rowoflo/ROPackages.git
-[submodule "MyDefault/ROPackages"]
-	path = MyDefault/ROPackages
-	url = git@github.com:rowoflo/ROPackages.git
+[submodule "LabBook/ROLatex"]
+	path = LabBook/ROLatex
+	url = git@github.com:rowoflo/ROLatex
+[submodule "NoteBook/ROLatex"]
+	path = NoteBook/ROLatex
+	url = git@github.com:rowoflo/ROLatex
+[submodule "MyIEEEConf/ROLatex"]
+	path = MyIEEEConf/ROLatex
+	url = git@github.com:rowoflo/ROLatex
+[submodule "MyDefault/ROLatex"]
+	path = MyDefault/ROLatex
+	url = git@github.com:rowoflo/ROLatex

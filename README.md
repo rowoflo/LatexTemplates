@@ -13,4 +13,5 @@ Make sure the /usepackages{ROLatex/ROPackage} is included in the latex file.
 
 To use a template copy and paste the contents into your working Latex folder. Remove the ROLatex folder and run:
 
+    >> git init
     >> git submodule add git@github.com:rowoflo/ROLatex.git ROLatex

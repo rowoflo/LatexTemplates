@@ -1,3 +1,13 @@
+This is a collection of my LaTeX templates. Clone with
+
+>> git clone git@github.com:rowoflo/LatexTemplates.git MyTemplates
+
+To use:
+Copy and paste the contents into your desired folder.
+
+********************************************************************************
+OLD STUFF
+********************************************************************************
 This is a collection of my LaTeX templates. This repo has git submodules in it. To clone this repo you use the following commands:
 
     >> git clone git@github.com:rowoflo/LatexTemplates.git MyTemplates
